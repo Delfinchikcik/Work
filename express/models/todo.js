@@ -52,7 +52,7 @@ static all() {
     const todo = await Todo.all()
     const idx = todo.findIndex((t) => t.id == id)
     const updatedTodo = {
-      ...todos[idx],
+      ...todo[idx],
       ...data         
     };
     todo[idx] = updatedTodo
